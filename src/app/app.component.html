@@ -1,0 +1,11 @@
+<div>
+  <app-search
+    (search)="getData($event)"
+  ></app-search>
+
+  <app-display-colors
+    [displayData]="jsonResponse"
+  ></app-display-colors>
+</div>
+
+<router-outlet></router-outlet>
