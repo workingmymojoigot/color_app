@@ -7,9 +7,9 @@ const app = express();
 
 console.log('running angular color app');
 
-app.use(express.static('${__dirname}/dist/colorApp'));
+app.use(express.static(__dirname + '\\dist\\colorApp'));
 app.get('/*', function(req,res) {
-    res.sendFile('./dist/colorApp/index.html');
+    res.sendFile('dist\\colorApp\\index.html');
 });
 
 const port = process.env.PORT || 8080;
